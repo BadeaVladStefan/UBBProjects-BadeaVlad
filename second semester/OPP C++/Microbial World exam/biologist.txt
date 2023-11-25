@@ -1,0 +1,4 @@
+Andrei,Bacterie1#Bacterie2,Bacterie3
+Cristi,Bacterie2
+Alex,Bacterie4#Bacterie5
+Doru,Bacterie1,Bacterie6

@@ -1,0 +1,118 @@
+     1                                  ; Codul de mai jos va deschide un fisier numit "input.txt" din directorul curent si va citi intregul text din acel fisier, in etape, cate 100 de caractere intr-o etapa.
+     2                                  ; Deoarece un fisier text poate fi foarte lung, nu este intotdeauna posibil sa citim fisierul intr-o singura etapa pentru ca nu putem defini un sir de caractere suficient de lung pentru intregul text din fisier. De 
+     3                                  ; Programul va folosi functia fopen pentru deschiderea fisierului, functia fread pentru citirea din fisier si functia fclose pentru inchiderea fisierului creat.
+     4                                  ; Deoarece in apelul functiei fopen programul foloseste modul de acces "r", daca un fisier numele dat nu exista in directorul curent,  apelul functiei fopen nu va reusi (eroare). Detalii despre modurile de acces sun
+     5                                  
+     6                                  bits 32 
+     7                                  
+     8                                  global start        
+     9                                  
+    10                                  
+    11                                  
+    12                                  extern exit, fopen, fclose, fread, printf
+    13                                  import exit msvcrt.dll 
+    14                                  import fopen msvcrt.dll 
+    15                                  import fread msvcrt.dll 
+    16                                  import fclose msvcrt.dll 
+    17                                  import printf msvcrt.dll
+    18                                   
+    19                                   
+    20                                  segment data use32 class=data
+    21 00000000 6669736965722E7478-         nume_fisier db "fisier.txt", 0  
+    21 00000009 7400               
+    22 0000000B 7200                        mod_acces db "r", 0              
+    23 0000000D FFFFFFFF                    descriptor_fis dd -1          
+    24 00000011 00000000                    nr_car_citite dd 0              
+    25                                      len equ 100                     
+    26 00000015 <res 00000064>              text resb len                 
+    27 00000079 746865726520617265-         format db "there are %d odd digits in the file",0
+    27 00000082 202564206F64642064-
+    27 0000008B 696769747320696E20-
+    27 00000094 7468652066696C6500 
+    28                                      
+    29                                  
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          
+    33 00000000 68[0B000000]                    push dword mod_acces
+    34 00000005 68[00000000]                    push dword nume_fisier
+    35 0000000A FF15[00000000]                  call [fopen]
+    36 00000010 83C408                          add esp, 4*2
+    37                                          
+    38 00000013 83F800                          cmp eax, 0                  
+    39 00000016 7476                            je final
+    40 00000018 A3[0D000000]                    mov [descriptor_fis], eax   
+    41                                          
+    42 0000001D BB00000000                      mov ebx,0
+    43                                          bucla:
+    44                                              
+    45 00000022 FF35[0D000000]                      push dword [descriptor_fis]
+    46 00000028 6A64                                push dword len
+    47 0000002A 6A01                                push dword 1
+    48 0000002C 68[15000000]                        push dword text
+    49 00000031 FF15[00000000]                      call [fread]
+    50 00000037 83C410                              add esp, 4*4
+    51                                              ; eax = numar de caractere 
+    52 0000003A 83F800                              cmp eax, 0          ; daca numarul de caractere citite este 0, am terminat de parcurs fisierul
+    53 0000003D 7431                                je cleanup
+    54                                  
+    55 0000003F A3[11000000]                        mov [nr_car_citite], eax        
+    56 00000044 89C1                                mov ecx,eax
+    57 00000046 BE00000000                          mov esi,0
+    58                                              
+    59                                              
+    60                                              repeta:
+    61 0000004B 8A86[15000000]                      mov al,[text+esi]
+    62 00000051 46                                  inc esi
+    63                                             
+    64 00000052 3C31                                cmp al,"1"
+    65 00000054 7501                                jne n1
+    66 00000056 43                                  inc ebx
+    67                                              n1:
+    68                                             
+    69 00000057 3C33                                cmp al,"3"
+    70 00000059 7501                                jne n3
+    71 0000005B 43                                  inc ebx
+    72                                              n3:
+    73                                             
+    74 0000005C 3C35                                cmp al,"5"
+    75 0000005E 7501                                jne n5
+    76 00000060 43                                  inc ebx
+    77                                              n5:
+    78                                             
+    79 00000061 3C37                                cmp al,"7"
+    80 00000063 7501                                jne n7
+    81 00000065 43                                  inc ebx 
+    82                                              n7:
+    83                                             
+    84 00000066 3C39                                cmp al,"9"
+    85 00000068 7501                                jne n9
+    86 0000006A 43                                  inc ebx
+    87                                              n9:
+    88                                             
+    89 0000006B 49                                  dec ecx
+    90 0000006C 75DD                                jnz repeta
+    91                                              
+    92                                              
+    93 0000006E EBB2                                jmp bucla
+    94                                          
+    95                                          
+    96                                          
+    97                                         
+    98                                         
+    99                                        cleanup:
+   100                                        ;here we print the result
+   101 00000070 53                              push ebx
+   102 00000071 68[79000000]                    push format
+   103 00000076 FF15[00000000]                  call [printf]
+   104 0000007C 83C408                          add esp,4*2
+   105                                        
+   106                                        ; here we close the file 
+   107 0000007F FF35[0D000000]                  push dword [descriptor_fis]
+   108 00000085 FF15[00000000]                  call [fclose]
+   109 0000008B 83C404                          add esp, 4
+   110                                          
+   111                                        final:  
+   112                                          ; exit(0)
+   113 0000008E 6A00                            push    dword 0      
+   114 00000090 FF15[00000000]                  call    [exit]       

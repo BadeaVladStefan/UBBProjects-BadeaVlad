@@ -1,0 +1,12 @@
+1,badea,912
+2,birou,912
+3,bozga,911
+4,doru,913
+5,mingea,911
+6,madalin,916
+7,gabi,911
+8,bianca,915
+9,ioana,917
+10,bacau,911
+11,Bergamur,912
+12,oli,912

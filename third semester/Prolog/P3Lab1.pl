@@ -1,0 +1,12 @@
+/*
+b. Remove all occurrence of a maximum value from a list on integer numbers
+*/
+
+maxim([],0).
+maxim([H|T],R):-
+    maxim(T,NewR),
+    H>NewR,
+    R is H.
+maxim([H|T],R):-
+    maxim(T,R),
+    H=<R.

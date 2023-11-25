@@ -1,0 +1,7 @@
+Bacterie1,Specie1,5,holera#lepra#boalaGrea#
+Bacterie2,Specie3,10,raceala#
+Bacterie7,Specie2,21,boala1#boala2#boala3#boala4#
+BacterieTest,Specia13,4,Nu-iUsor#
+aaa,aa,1,a#
+aaaa,aa,3,asd#
+Bacteria1,aa,3,asd#

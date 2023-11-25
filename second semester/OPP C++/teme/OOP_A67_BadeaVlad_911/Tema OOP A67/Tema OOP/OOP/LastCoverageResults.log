@@ -1,0 +1,21 @@
+[2023-05-03 12:20:55] [info] Start Program:
+Path:"C:\Users\Vlad\Desktop\Tema OOP\OOP\x64\Debug\OOP.exe"
+Arguments:
+Working directory: "C:\Users\Vlad\Desktop\Tema OOP\OOP\"
+Modules: Selected: C:\Users\Vlad\Desktop\Tema OOP\OOP\x64\Debug\OOP.exe Excluded: 
+Sources: Selected: C:\Users\Vlad\Desktop\Tema OOP\OOP Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Vlad\AppData\Local\Temp\bhfe53vk.y3q 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-05-03 12:20:55] [info] Module: C:\Users\Vlad\Desktop\Tema OOP\OOP\x64\Debug\OOP.exe is selected because it matches selected pattern: C:\Users\Vlad\Desktop\Tema OOP\OOP\x64\Debug\OOP.exe
+[2023-05-03 12:20:55] [info] ----------------------------------------------------
+[2023-05-03 12:20:55] [info] Coverage binary generated in file: C:\Users\Vlad\AppData\Local\Temp\bhfe53vk.y3q
+[2023-05-03 12:20:55] [info] ----------------------------------------------------

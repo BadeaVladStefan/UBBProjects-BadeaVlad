@@ -1,0 +1,58 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                                            
+    11                                  ;Given the byte A, obtain the integer number n represented on the bits 2-4 of A. Then obtain the byte B by rotating A n positions to the right. Compute the doubleword C as follows:
+    12                                  
+    13                                  ;the bits 0-7 of C have the value 1
+    14                                  ;the bits 8-15 of C have the value 0
+    15                                  ;the bits 16-23 of C are the same as the bits of B
+    16                                  ;the bits 24-31 of C are the same as the bits of A
+    17                                  
+    18                                  ; our data is declared here (the variables needed by our program)
+    19                                  segment data use32 class=data
+    20 00000000 AA                          a db 10101010b;we need the integer value of the bits between 2-4 ;a=170d
+    21 00000001 00                          b db 0;b=170d
+    22 00000002 00000000                    c dd 0
+    23                                      
+    24                                  
+    25                                  ; our code starts here
+    26                                  segment code use32 class=code
+    27                                      start:
+    28                                          ; 
+    29 00000000 B800000000                      mov EAX,0
+    30 00000005 A0[00000000]                    mov AL,[a];we will compute the result in al
+    31 0000000A 241C                            and AL,0001_1100b;AL now holds the value of the integer in the 2-4 bits, so here n=8 which we will use to rotate the value of a so we can obtain b
+    32 0000000C 88C1                            mov CL,AL;CL now holds the value of 8
+    33 0000000E A0[00000000]                    mov AL,[a];AL=1010 1010b ,and now we can rotate them to obtain the value of b
+    34 00000013 D2C8                            ror AL,CL;AL now holds the value of b which is:10101010b
+    35 00000015 A2[01000000]                    mov [b],AL;now [b] holds the value 10101010b
+    36                                          ;and now we have a=10101010b and b=10101010b so we can start computing the value of c
+    37 0000001A A1[02000000]                    mov EAX,[c];eax=00000000000000000000000000000000
+    38 0000001F 0DFF000000                      or EAX,0000_0000__0000_0000__0000_0000__1111_1111b;the bits 0-7 of the doubleword c are now 1 and the bits from 8-15 are 0 and because it is the first half of the number it is stored in AX => now AX:0000 000
+    39 00000024 50                              push EAX
+    40 00000025 6658                            pop AX;AX contains only the first 16 bits
+    41 00000027 665A                            pop DX;we isolate DX,which is empty so we can work with it,DX is 0
+    42 00000029 8A15[01000000]                  mov DL,[b];DL=>1010 1010b ->DL holds the value of b
+    43 0000002F 8A35[00000000]                  mov DH,[a];DH=>1010 1010b ->DH holds the value of a ; and my combining the 2 we get DX=1010 1010b-Value of A and 1010 1010b -value of B so DX=d
+    44 00000035 6652                            push DX
+    45 00000037 6650                            push AX
+    46 00000039 58                              pop EAX; so now EAX=10101010 10101010 00000000 11111111, which is the value of C (2,863,268,095d)
+    47 0000003A A3[02000000]                    mov [c],EAX; c=1010 1010 1010 1010 0000 0000 1111 1111
+    48                                          ;                A    A    A    A    0    0    F    F =>AAAA00FF
+    49                                          
+    50                                          
+    51                                          
+    52                                          
+    53                                          
+    54                                          
+    55                                          
+    56                                          ; exit(0)
+    57 0000003F 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    58 00000041 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

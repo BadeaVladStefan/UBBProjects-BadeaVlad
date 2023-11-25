@@ -1,0 +1,55 @@
+/*
+a. Write a predicate to substitute in a list a value with all the elements of another list.
+b. Remove the n-th element of a list.
+*/
+
+/*
+A:
+                          {l1Uconc_lists(l2..ln,a1..am) if n>0
+conc_lists(l1..ln,a1..am)={a1Uconc_lists(...,a2..am) if n=0,m>0
+                          { [] if n=0,m=0
+conc_lists(L1-first list,L2-second list,R-Result List)
+(i,i,o)
+
+                               { [] if n=0
+sub_value(l1..ln,Value,a1..am)={ l1Usub_value(l2..ln,Value,a1..am)
+                                if l1!=Value and n>=1
+                               {conc_lists(l2..ln,a1..am)U
+                                sub_value(l2..ln,Value,a1..am) if
+                                l1=Value and n>=1
+sub_value(L-intial list,Value-number,A-list to be added,R-Result List)
+(i,i,i,o)
+*/
+
+
+conc_lists([],[],[]).
+conc_lists([H|T],B,[H|R]):-
+    conc_lists(T,B,R).
+conc_lists([],[H|T],[H|R]):-
+    conc_lists([],T,R).
+
+
+/*
+Remove the n-th element of a list
+
+                                  { [] if pos<=0
+remove_elem(l1..ln,pos,counter=0)={ l1Uremove_elem(l2..ln,pos,counter+1)
+                                    if pos>counter
+                                  { remove_elem(l2..ln,pos,counter+1) if
+                                    pos=counter
+                                  { l1Uremove_elem(l2..ln,pos,counter+1)
+                                    if pos<counter
+
+remove_elem(L-list,Pos-number,Counter=0-counter,R-result list)
+(i,i,i,o)
+
+wrapper(L,Pos,R)=remove_elem(L,Pos,1,R).
+*/
+
+
+remove_elem([], _, []).
+remove_elem([_|T],1,T).
+remove_elem([H|T],K,[H|R]):-
+    K>1,
+    NewK is K - 1,
+    remove_elem(T,NewK,R).

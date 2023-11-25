@@ -1,0 +1,57 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; A byte string s is given. Build the byte string d such that every byte d[i] is equal to the count of ones in the corresponding byte s[i] of s.
+    14                                      ;s: 5, 25, 55, 127
+    15                                      ;in binary:
+    16                                      ;101, 11001, 110111, 1111111 ;jnc ,ror 1
+    17                                      ;d: 2, 3, 5, 7
+    18                                      
+    19 00000000 0519377F                    s db 5,25,55,127
+    20                                      len equ $-s
+    21 00000004 00<rept>                    d times len db 0
+    22                                      
+    23                                      
+    24                                  ; our code starts here
+    25                                  segment code use32 class=code
+    26                                      start:
+    27 00000000 B904000000                      mov ecx,len 
+    28 00000005 BE[00000000]                    mov esi,s
+    29 0000000A FC                              cld; from left -> right
+    30 0000000B BF00000000                      mov edi,0;we will use this to help us store the elements in the "d" array
+    31                                          
+    32                                          repeta:
+    33                                          
+    34 00000010 AC                                  lodsb; AL = elements of the array one at a time
+    35 00000011 BB08000000                          mov ebx,8
+    36                                              
+    37 00000016 B200                                mov dl,0; we will count the numbers of 1 using dl
+    38                                              rotation:
+    39                                              
+    40 00000018 D0C8                                    ror al,1
+    41                                                  
+    42 0000001A 7302                                    jnc done;we verify for every bit if its a 1
+    43 0000001C FEC2                                    inc dl
+    44                                                  done:
+    45                                                  
+    46 0000001E 4B                                      dec ebx
+    47 0000001F 83FB00                                  cmp ebx,0
+    48                                                  
+    49 00000022 75F4                                    jnz rotation
+    50                                                
+    51 00000024 8897[04000000]                  mov [d+edi],dl
+    52 0000002A 47                              inc edi   
+    53                                          
+    54 0000002B E2E3                            loop repeta
+    55                                          ; exit(0)
+    56 0000002D 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    57 0000002F FF15[00000000]                  call    [exit]       ; call exit to terminate the program

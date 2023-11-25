@@ -1,0 +1,61 @@
+     1                                  bits 32 
+     2                                  global start        
+     3                                  
+     4                                  ;Two natural numbers a and b (a, b: dword, defined in the data segment) are given. ;Calculate their product and display the result in the following format: "<a> * <b> = <result>". Example: "2 * 4 = 8"
+     5                                  ;The values will be displayed in decimal format (base 10) with sign.
+     6                                  
+     7                                  extern exit, printf, scanf               
+     8                                  import exit msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                  import scanf msvcrt.dll    
+    11                                                            
+    12                                  
+    13                                  
+    14                                  segment data use32 class=data
+    15 00000000 02000000                    a dd 2
+    16 00000004 04000000                    b dd 4
+    17 00000008 25642A25643D256400          mesaj db "%d*%d=%d",0
+    18 00000011 <res 00000008>              res resq 1
+    19                                      
+    20                                  
+    21                                  
+    22                                  segment code use32 class=code
+    23                                      start:
+    24 00000000 A1[00000000]                    mov eax,[a]
+    25 00000005 8B1D[04000000]                  mov ebx,[b]
+    26                                          
+    27 0000000B F7EB                            imul ebx ;edx:eax=a*b
+    28 0000000D 8915[11000000]                  mov [res+0],edx
+    29 00000013 A3[15000000]                    mov [res+4],eax
+    30                                          
+    31                                          
+    32 00000018 B900000000                      mov ecx,0
+    33 0000001D BA00000000                      mov edx,0
+    34                                          
+    35 00000022 8B0D[00000000]                  mov ecx,[a]
+    36 00000028 8B15[04000000]                  mov edx,[b]
+    37                                          
+    38                                          ;we verify if the high doubleword of the result is zero. if its a zero we dont want to print it
+    39 0000002E 833D[11000000]00                cmp [res+0],dword 0
+    40 00000035 741E                            je sari
+    41                                          
+    42 00000037 FF35[11000000]                  push dword [res+0]
+    43 0000003D FF35[15000000]                  push dword [res+4]
+    44 00000043 52                              push dword edx
+    45 00000044 51                              push dword ecx
+    46 00000045 68[08000000]                    push dword mesaj
+    47 0000004A FF15[00000000]                  call [printf]
+    48 00000050 83C414                          add esp, 4*5
+    49 00000053 EB16                            jmp gata
+    50                                          
+    51                                          sari:
+    52 00000055 FF35[15000000]                  push dword [res+4]
+    53 0000005B 52                              push dword edx
+    54 0000005C 51                              push dword ecx
+    55 0000005D 68[08000000]                    push dword mesaj
+    56 00000062 FF15[00000000]                  call [printf]
+    57 00000068 83C410                          add esp, 4*4
+    58                                          
+    59                                          gata:
+    60 0000006B 6A00                            push    dword 0      
+    61 0000006D FF15[00000000]                  call    [exit]       

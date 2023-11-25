@@ -1,0 +1,64 @@
+/*
+a. Write a predicate to test if a list is a set.
+b. Write a predicate to remove the first three occurrences of an element in a list. If the element occurs less
+than three times, all occurrences will be removed.
+
+                      { false n=0
+isNumInList(l1..ln,E)={ true if l1=e
+                      { isNumInList(l2..ln) otherwise
+
+                    { 0 if n=0
+countApps(l1..ln,E)={ 1+countApps(l2..ln,E) if l1=E
+                    { countApps(l2..ln,E) if l1!=E
+
+                { true if n=0
+testSet(l1..ln)={ testSet(l2..ln) if countApps(l1..ln,l1) = 1
+                { false otherwise
+
+                     { [] if n=0,
+rmElem(l1..ln,E,C=1)={ l1UrmElem(l2..ln,E,C) if n>=1 and l1!=E
+                     { l1UrmElem(l2..ln,E,C) if n>=1 and l1=e and C>3
+                     { rmElem(l2..ln,E,C+1) if n>=1 and l1=e C <=3
+*/
+
+isNumInList([A|_],A).
+isNumInList([H|T],E):-
+   H \= E,
+   isNumInList(T,E).
+
+countApps([],_,0).
+countApps([E|T],E,R):-
+    countApps(T,E,NewR),
+    R is NewR + 1.
+countApps([H|T],E,R):-
+    H \= E,
+    countApps(T,E,R).
+
+testSet([],_).
+testSet([H|T],CopyL):-
+    countApps(CopyL,H,Result),
+    Result =:= 1,
+    testSet(T,CopyL).
+
+wrapperFunction(L):-testSet(L,L).
+
+
+rmElem([],_,_,[]).
+rmElem([H|T],E,C,[H|R]):-
+    H \= E,
+    rmElem(T,E,C,R).
+rmElem([E|T],E,C,[E|R]):-
+    C > 3,
+    NewC is C + 1,
+    rmElem(T,E,NewC,R).
+rmElem([E|T],E,C,R):-
+    C =< 3,
+    NewC is C + 1,
+    rmElem(T,E,NewC,R).
+
+solutin(L,E,R):-rmElem(L,E,1,R).
+
+
+
+
+

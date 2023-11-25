@@ -1,0 +1,39 @@
+/*
+a. Define a predicate to test if a list of an integer elements has a "valley" aspect (a set has a "valley" aspect if
+elements decreases up to a certain point, and then increases.
+eg: 10 8 6 9 11 13 – has a “valley” aspect
+*/
+
+valley([_],0).
+valley([H1, H2|T],_):-
+    H1<H2,
+    valley([H2|T],0),
+    !.
+valley([H1,H2|T],1):-
+    H1>H2,
+    valley([H2|T],1),
+    !.
+
+wrapper(L):-valley(L,1).
+
+/*
+Calculate the alternate sum of list’s elements (l1 - l2 + l3 ...)
+
+               { 0 if n = 0
+calc(list,c=0)={ l1+clac(l2..ln,1) if c=0 n>=1
+               { calc(l2..ln.0)-l2 if c=1 n>=1
+*/
+
+calc([],_,0).
+calc([H|T],0,R):-
+    calc(T,1,NewR),
+    R is H+NewR.
+calc([H|T],1,R):-
+    calc(T,0,NewR),
+    R is NewR-H.
+
+start_calc(L,R):-calc(L,0,R).
+
+
+
+

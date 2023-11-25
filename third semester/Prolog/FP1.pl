@@ -1,0 +1,219 @@
+/*
+ * 2 liste:
+ * => 2 maxi
+ * => o lista cu val * 2
+ * => o lista in care se dubleaza elem
+
+          { A if A > B
+maxi(A,B)={ B if A =< B
+
+                 { 0 if n=0
+maxiList(l1..ln)={ l1 if n=1
+                 { maxi(l1,l2)UmaxiList(l3..ln) if n>=2
+
+
+*/
+
+maxi(A,B,A):-
+    A > B.
+maxi(A,B,B):-
+    A =< B.
+
+maxiList([],0).
+maxiList([A],A).
+maxiList([H1,H2|T],R):-
+    maxi(H1,H2,Maxi),
+    maxiList([Maxi|T],R).
+
+doubleVal([],[]).
+doubleVal([H|T],[NewH|R]):-
+    NewH is H * 2,
+    doubleVal(T,R).
+
+doubleNumbers([],[]).
+doubleNumbers([H|T],[H,H|R]):-
+    doubleNumbers(T,R).
+
+wrapper1(L1,L2,R1,R2):-
+     maxiList(L1,Maxi1),
+     maxiList(L2,Maxi2),
+     write('The first maxi is :'), write(Maxi1), nl,
+     write('The second maxi is: '), write(Maxi2), nl,
+     doubleVal(L1,R1),
+     doubleNumbers(L2,R2).
+
+keepEven([],[]).
+keepEven([H|T],[H|R]):-
+    number(H),
+    NewH is H mod 2,
+    NewH =:= 0,
+    keepEven(T,R).
+keepEven([H|T],R):-
+    (atom(H);number(H),NewH is H mod 2, NewH =:= 1),
+    keepEven(T,R).
+
+
+
+/*
+         { A if A=B
+gcd(A,B)={ gcd(A-B,B) if A>B
+         { gcd(A,B-A) if A<B
+    */
+
+gcd(A,A,A).
+gcd(A,B,R):-
+    A > B,
+    NewA is A - B,
+    gcd(NewA,B,R).
+gcd(A,B,R):-
+    A < B,
+    NewB is B - A,
+    gcd(A,NewB,R).
+
+/*
+                { 1 if []
+gcdList(l1..ln)={ l1 if n=1
+                { gcd(l1,l2)UgcdList(l3...ln) n>=2
+    */
+gcdList([],1).
+gcdList([A],A).
+gcdList([H1,H2|T],R):-
+    gcd(H1,H2,G),
+    gcdList([G|T],R).
+
+
+multiplyList([],1).
+multiplyList([H|T],R):-
+    multiplyList(T,NewR),
+    R is NewR * H.
+
+
+wrapper2(L1,E1):-
+    keepEven(L1,E1),
+    gcdList(E1,GCD),
+    multiplyList(E1,MUL),
+    CMMMC is MUL/GCD,
+    write('CMMMC is :'),write(CMMMC),nl.
+
+
+
+/*
+ *
+*/
+
+/*
+ List:
+ sa intoarca true daca are nr par de elemente fara sa le numere
+ de cate ori apare maxim
+ dupa fiecare numar impar adauga dublul lui
+ sterge un nr dat de user
+ mini=>sters de minim 3 ori
+
+*/
+
+/*
+                   { true if []
+ evenList(l1...ln)={ false if n=1 (l1)
+                   { evenList(l3...ln)
+
+ */
+
+
+evenList([]).
+evenList([_,_|T]):-
+    evenList(T).
+
+minimNr(A,B,B):-
+    A > B.
+minimNr(A,B,A):-
+    A =< B.
+
+minimList([],0).
+minimList([A],A).
+minimList([H1,H2|T],R):-
+    minimNr(H1,H2,M),
+    minimList([M|T],R).
+
+/*
+                 {0 []
+noApps(l1..ln,e)={1+noApps(l2..ln,e) if n>=1 si l1 = e
+                 {noApps(l2...ln,e) if n>=1 si l1 != e
+*/
+
+noApps([],_,0).
+noApps([E|T],E,R):-
+    noApps(T,E,NewR),
+    R is NewR + 1.
+noApps([H|T],E,R):-
+    H \= E,
+    noApps(T,E,R).
+
+doubleOdds([],[]).
+doubleOdds([H|T],[H,NewH|R]):-
+    Res is H mod 2,
+    Res =:= 1,
+    NewH is H * 2,
+    doubleOdds(T,R).
+doubleOdds([H|T],[H|R]):-
+    Res is H mod 2,
+    Res =:= 0,
+    doubleOdds(T,R).
+
+rmElem([],_,[]).
+rmElem([E|T],E,R):-
+    rmElem(T,E,R).
+rmElem([H|T],E,[H|R]):-
+    H \= E,
+    rmElem(T,E,R).
+
+/*
+                     { [] if []
+minDel(l1..ln,e,c=1)={ minDel(l2..ln,e,c+1) if l1=e, c<=3
+                     { l1UminDel(l2...ln,e,c+1) if l1=e c>3
+                     { l1UminDel(l2...ln,e,c) if l1!=e
+
+
+*/
+
+minDel([],_,_,[]).
+minDel([E|T],E,C,R):-
+    C =< 3,
+    NewC is C+1,
+    minDel(T,E,NewC,R).
+minDel([E|T],E,C,[E|R]):-
+    C > 3,
+    NewC is C+1,
+    minDel(T,E,NewC,R).
+minDel([H|T],E,C,[H|R]):-
+    H \= E,
+    minDel(T,E,C,R).
+
+/*
+ List:
+ sa intoarca true daca are nr par de elemente fara sa le numere
+ de cate ori apare maxim
+ dupa fiecare numar impar adauga dublul lui
+ sterge un nr dat de user
+ mini=>sters de minim 3 ori
+
+*/
+
+/*
+wrapper3(IntialList,GivenElem,Res1,Res2,Res3):-
+    maxiList(InitialList,Maxi),
+    noApps(IntialList,Maxi,Apps),
+    write('Maximul apare de: '),write(Apps),nl,
+    doubleOdds(InitialList,Res1),
+    rmElem(IntialList,GivenElem,Res2),
+    minimList(IntialList,Mini),
+    minDel(IntialList,Mini,1,Res3).
+*/
+
+wrapper3(IntialList,GivenElem,Res1,Res2,Res3):-
+    maxiList(InitialList,Maxi),
+    noApps(IntialList,Maxi,Apps),
+    write('Maximul apare de: '),write(Apps),nl,
+    doubleOdds(InitialList,Res1),
+    rmElem(IntialList,GivenElem,Res2),
+    minimList(IntialList,Mini),
+    minDel(IntialList,Mini,1,Res3).

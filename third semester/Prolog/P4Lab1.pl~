@@ -1,0 +1,41 @@
+/*
+4.
+a. Write a predicate to determine the difference of two sets.
+b. Write a predicate to add value 1 after every even element from a list.
+             {0
+noApps(L1,e)={1+
+             {
+*/
+noOfApps([],_,0).
+noOfApps([E|T],E,R):-
+    noOfApps(T,E,NewR),
+    R is NewR + 1.
+noOfApps([H|T],E,R):-
+    H \= E,
+    noOfApps(T,E,R).
+
+diff(L1,[],L1).
+diff(L1,[H|T],[H|Result]):-
+    \+ member(H,L1),
+    diff(L1,T,Result).
+diff(L1,[H|T],Result):-
+    member(H,L1),
+    diff(L1,T,Result).
+
+
+
+/*
+
+*/
+
+isEven(A):-
+    Result is A mod 2,
+    Result=:=0.
+
+addOne([],[]).
+addOne([H|T],[H,1|R]):-
+    isEven(H),
+    addOne(T,R).
+addOne([H|T],[H|R]):-
+    H \= 1,
+    addOne(T,R).
