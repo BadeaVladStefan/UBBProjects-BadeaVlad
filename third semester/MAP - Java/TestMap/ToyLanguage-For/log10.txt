@@ -1,0 +1,1242 @@
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='a', type=Ref(int)};(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))))]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))), VarDeclStmt{name='a', type=Ref(int)}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))), VarDeclStmt{name='a', type=Ref(int)}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))))]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))))]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))), new(a,ValueExp{e=20})]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))), new(a,ValueExp{e=20})]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))]
+symTable={a=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))]
+symTable={a=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))), VarDeclStmt{name='v', type=int}]
+symTable={a=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))), VarDeclStmt{name='v', type=int}]
+symTable={a=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (v=ValueExp{e=0};(while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (v=ValueExp{e=0};(while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ValueExp{e=0}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ValueExp{e=0}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, v=20}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'}))]
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1, 2]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1, 2]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'}))]
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1, 2]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1, 2]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 1
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1, 2, 20]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, v=40}
+out=[0, 1, 2, 20]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [(VarDeclStmt{name='a', type=Ref(int)};(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))))]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))), VarDeclStmt{name='a', type=Ref(int)}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))), VarDeclStmt{name='a', type=Ref(int)}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))))]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(new(a,ValueExp{e=20});(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))))]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))), new(a,ValueExp{e=20})]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))), new(a,ValueExp{e=20})]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))]
+symTable={a=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [(VarDeclStmt{name='v', type=int};(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))))]
+symTable={a=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))), VarDeclStmt{name='v', type=int}]
+symTable={a=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'}))), VarDeclStmt{name='v', type=int}]
+symTable={a=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [(for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))};print(ReadHeapExp(exp=VarExp{id='a'})))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), for(v=ValueExp{e=0}; v<ValueExp{e=3}; v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}) { fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (v=ValueExp{e=0};(while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (v=ValueExp{e=0};(while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ValueExp{e=0}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ValueExp{e=0}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 3
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, v=0}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), (fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=1}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 4
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, v=20}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}, fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}))]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 5
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 5
+exeStack = [(print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 5
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'})), (while(RelationalExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=3}, op=1})(fork((print(VarExp{id='v'});v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}));v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=1}))]
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 5
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}, print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'}))]
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1, 2]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 5
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1, 2]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = [print(ReadHeapExp(exp=VarExp{id='a'}))]
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1, 2]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 5
+exeStack = [v=ArithExp{e1=VarExp{id='v'}, e2=ReadHeapExp(exp=VarExp{id='a'}), op=3}]
+symTable={a=RefValue{address=1, locationType=int}, v=2}
+out=[0, 1, 2]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 2
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, v=3}
+out=[0, 1, 2, 20]
+fileTable={}
+heap={1=20}
+
+Program State : 
+
+id = 5
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, v=40}
+out=[0, 1, 2, 20]
+fileTable={}
+heap={1=20}
+

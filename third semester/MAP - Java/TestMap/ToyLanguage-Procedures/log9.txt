@@ -1,0 +1,720 @@
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(VarDeclStmt{name='w', type=int};(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))))))]
+symTable=[{}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='w', type=int};(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))))), VarDeclStmt{name='v', type=int}]
+symTable=[{}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='w', type=int};(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))))), VarDeclStmt{name='v', type=int}]
+symTable=[{}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='w', type=int};(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))))))]
+symTable=[{v=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='w', type=int};(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))))))]
+symTable=[{v=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))))), VarDeclStmt{name='w', type=int}]
+symTable=[{v=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))))), VarDeclStmt{name='w', type=int}]
+symTable=[{v=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))))]
+symTable=[{v=0, w=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(v=ValueExp{e=2};(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))))]
+symTable=[{v=0, w=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))), v=ValueExp{e=2}]
+symTable=[{v=0, w=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))), v=ValueExp{e=2}]
+symTable=[{v=0, w=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))))]
+symTable=[{v=2, w=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(w=ValueExp{e=5};(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))))]
+symTable=[{v=2, w=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))), w=ValueExp{e=5}]
+symTable=[{v=2, w=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))), w=ValueExp{e=5}]
+symTable=[{v=2, w=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))]
+symTable=[{v=2, w=5}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}];(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))))]
+symTable=[{v=2, w=5}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]]
+symTable=[{v=2, w=5}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), call sum[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]]
+symTable=[{v=2, w=5}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, (VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))]
+symTable=[{v=2, w=5}, {a=20, b=5}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, (VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))]
+symTable=[{v=2, w=5}, {a=20, b=5}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})), VarDeclStmt{name='v', type=int}]
+symTable=[{v=2, w=5}, {a=20, b=5}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})), VarDeclStmt{name='v', type=int}]
+symTable=[{v=2, w=5}, {a=20, b=5}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'}))]
+symTable=[{v=2, w=5}, {a=20, b=5, v=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'}))]
+symTable=[{v=2, w=5}, {a=20, b=5, v=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+symTable=[{v=2, w=5}, {a=20, b=5, v=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+symTable=[{v=2, w=5}, {a=20, b=5, v=0}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, print(VarExp{id='v'})]
+symTable=[{v=2, w=5}, {a=20, b=5, v=25}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return, print(VarExp{id='v'})]
+symTable=[{v=2, w=5}, {a=20, b=5, v=25}]
+out=[]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return]
+symTable=[{v=2, w=5}, {a=20, b=5, v=25}]
+out=[25]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))), return]
+symTable=[{v=2, w=5}, {a=20, b=5, v=25}]
+out=[25]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))]
+symTable=[{v=2, w=5}]
+out=[25]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))))]
+symTable=[{v=2, w=5}]
+out=[25]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))), print(VarExp{id='v'})]
+symTable=[{v=2, w=5}]
+out=[25]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))), print(VarExp{id='v'})]
+symTable=[{v=2, w=5}]
+out=[25]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))]
+symTable=[{v=2, w=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = [fork((call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}])))]
+symTable=[{v=2, w=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 1
+exeStack = []
+symTable=[{v=2, w=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [(call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))]
+symTable=[{v=2, w=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [(call product[VarExp{id='v'}, VarExp{id='w'}];fork(call sum[VarExp{id='v'}, VarExp{id='w'}]))]
+symTable=[{v=2, w=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), call product[VarExp{id='v'}, VarExp{id='w'}]]
+symTable=[{v=2, w=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), call product[VarExp{id='v'}, VarExp{id='w'}]]
+symTable=[{v=2, w=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, (VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'})))]
+symTable=[{v=2, w=5}, {a=2, b=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, (VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'})))]
+symTable=[{v=2, w=5}, {a=2, b=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'})), VarDeclStmt{name='v', type=int}]
+symTable=[{v=2, w=5}, {a=2, b=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'})), VarDeclStmt{name='v', type=int}]
+symTable=[{v=2, w=5}, {a=2, b=5}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))]
+symTable=[{v=2, w=5}, {a=2, b=5, v=0}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))]
+symTable=[{v=2, w=5}, {a=2, b=5, v=0}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}]
+symTable=[{v=2, w=5}, {a=2, b=5, v=0}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}]
+symTable=[{v=2, w=5}, {a=2, b=5, v=0}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, print(VarExp{id='v'})]
+symTable=[{v=2, w=5}, {a=2, b=5, v=10}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return, print(VarExp{id='v'})]
+symTable=[{v=2, w=5}, {a=2, b=5, v=10}]
+out=[25, 2]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return]
+symTable=[{v=2, w=5}, {a=2, b=5, v=10}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}]), return]
+symTable=[{v=2, w=5}, {a=2, b=5, v=10}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}])]
+symTable=[{v=2, w=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = [fork(call sum[VarExp{id='v'}, VarExp{id='w'}])]
+symTable=[{v=2, w=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 2
+exeStack = []
+symTable=[{v=2, w=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [call sum[VarExp{id='v'}, VarExp{id='w'}]]
+symTable=[{v=2, w=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [call sum[VarExp{id='v'}, VarExp{id='w'}]]
+symTable=[{v=2, w=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, (VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))]
+symTable=[{v=2, w=5}, {a=2, b=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, (VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))]
+symTable=[{v=2, w=5}, {a=2, b=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})), VarDeclStmt{name='v', type=int}]
+symTable=[{v=2, w=5}, {a=2, b=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})), VarDeclStmt{name='v', type=int}]
+symTable=[{v=2, w=5}, {a=2, b=5}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'}))]
+symTable=[{v=2, w=5}, {a=2, b=5, v=0}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'}))]
+symTable=[{v=2, w=5}, {a=2, b=5, v=0}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+symTable=[{v=2, w=5}, {a=2, b=5, v=0}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+symTable=[{v=2, w=5}, {a=2, b=5, v=0}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, print(VarExp{id='v'})]
+symTable=[{v=2, w=5}, {a=2, b=5, v=7}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return, print(VarExp{id='v'})]
+symTable=[{v=2, w=5}, {a=2, b=5, v=7}]
+out=[25, 2, 10]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return]
+symTable=[{v=2, w=5}, {a=2, b=5, v=7}]
+out=[25, 2, 10, 7]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = [return]
+symTable=[{v=2, w=5}, {a=2, b=5, v=7}]
+out=[25, 2, 10, 7]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
+Program State : 
+
+id = 3
+exeStack = []
+symTable=[{v=2, w=5}]
+out=[25, 2, 10, 7]
+fileTable={}
+heap={}
+procTable={product=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3};print(VarExp{id='v'}))), sum=[a, b]=(VarDeclStmt{name='v', type=int};(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1};print(VarExp{id='v'})))}
+
