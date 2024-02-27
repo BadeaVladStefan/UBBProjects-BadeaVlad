@@ -24,8 +24,7 @@ Assignments and projects done for the University.
 - [🔍 Databases](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/SQL)
 - [🧠 Functional & logic programming](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/PLF)
 - [📊 Probabilities & Statistics](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/P%26S)
-
-
+- [💡 Computer Networks](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/Computer%20Networks)
 <br>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
