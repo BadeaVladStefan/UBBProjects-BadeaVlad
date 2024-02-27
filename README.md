@@ -22,7 +22,7 @@ Assignments and projects done for the University.
 ## 💻 Semester 3
 - [🚀 Advanced Programming Methods](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/MAP%20-%20Java)
 - [🔍 Databases](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/SQL)
-- [🧠 Functional & logic programming](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/Prolog)
+- [🧠 Functional & logic programming](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/PLF)
 - [📊 Probabilities & Statistics](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/P%26S)
 
 
