@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .menu {
+            width: 200px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu > ul > li {
+            border: 1px solid blue;
+            background-color: lightblue;
+            margin-bottom: 4px;
+            position: relative;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .menu li:hover > .submenu {
+            display: block;
+            position: fixed;
+            top: 10px;
+            left: 210px;
+
+        }
+
+        .submenu {
+            display: none;
+            background-color: lightblue;
+            border: 1px solid blue;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .submenu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .submenu li {
+            background-color: lightblue;
+            border: 1px solid blue;
+            margin-top: 4px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .submenu li:hover > .submenu {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+
+        .search-bar {
+            border: 1px solid blue;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <img src="windows_logo.jpg" alt="Windows Logo" style="width: 20px; height: 20px; margin-right: 8px;">Windows
+                <div class="submenu">
+                    <ul>
+                        <li>Shut Down</li>
+                        <li>Restart</li>
+                        <li>Sleep</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type="text" class="search-bar" placeholder="Search...">
+            </li>
+            <li>
+                <img src="mycomputer.jpg" alt="My Computer" style="width: 20px; height: 20px; margin-right: 8px;">My Computer
+                <div class="submenu">
+                    <ul>
+                        <li>
+                            Local Disk (C:)
+                            <div class="submenu">
+                                <ul>
+                                    <li>Program Files
+                                        <div class="submenu">
+                                            <ul>
+                                                <li>Homework
+                                                    <div class="submenu">
+                                                        <ul>
+                                                            <li>tema1</li>
+                                                            <li>tema2</li>
+                                                            <li>tema3</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>Common Files</li>
+                                                <li>Microsoft</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>Windows</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Control Panel</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="settings.png" alt="Settings" style="width: 20px; height: 20px; margin-right: 8px;">Settings
+                <div class="submenu">
+                    <ul>
+                        <li>System
+                            <div class="submenu">
+                                <ul>
+                                    <li>Audio</li>
+                                    <li>Video</li>
+                                    <li>Keyboard</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Network</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="documents.png" alt="Documents" style="width: 20px; height: 20px; margin-right: 8px;">Documents
+                <div class="submenu">
+                    <ul>
+                        <li>Personal</li>
+                        <li>Work</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="games.png" alt="Games" style="width: 20px; height: 20px; margin-right: 8px;">Games
+                <div class="submenu">
+                    <ul>
+                        <li>Action
+                            <div class="submenu">
+                                <ul>
+                                    <li>FPS</li>
+                                    <li>MOBA</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Adventure
+                            <div class="submenu">
+                                <ul>
+                                    <li>RPG</li>
+                                    <li>JRPG</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="help.png" alt="Help" style="width: 20px; height: 20px; margin-right: 8px;">Help
+                <div class="submenu">
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Contact Support</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
