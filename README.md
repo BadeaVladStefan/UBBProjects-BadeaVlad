@@ -18,6 +18,8 @@ Assignments and projects done for the University.
 - [💡 Computer Networks](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/third%20semester/Computer%20Networks)
 
 ## 💻 Semester 4
-- [🤖 artificial intelligence](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/fourth%20semester/artificial%20intelligence)
-- [🌟 web programming](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/fourth%20semester/web%20programming/Lab1WP)
-
+- [🤖 Artificial intelligence](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/fourth%20semester/artificial%20intelligence)
+- [🌟 Web programming](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/fourth%20semester/web%20programming/Lab1WP)
+- [👾 Database Management Systems](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/fourth%20semester/Baze)
+- [💉 Software Engineering](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/fourth%20semester/Iss)
+- [💲 Design and programming environments](https://github.com/BadeaVladStefan/UBBProjects-BadeaVlad/tree/main/fourth%20semester/MPP)
