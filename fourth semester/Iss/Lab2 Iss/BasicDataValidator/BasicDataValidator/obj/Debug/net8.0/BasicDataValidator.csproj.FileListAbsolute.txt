@@ -1,0 +1,14 @@
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\bin\Debug\net8.0\BasicDataValidator.exe
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\bin\Debug\net8.0\BasicDataValidator.deps.json
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\bin\Debug\net8.0\BasicDataValidator.runtimeconfig.json
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\bin\Debug\net8.0\BasicDataValidator.dll
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\bin\Debug\net8.0\BasicDataValidator.pdb
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\BasicDataValidator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\BasicDataValidator.AssemblyInfoInputs.cache
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\BasicDataValidator.AssemblyInfo.cs
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\BasicDataValidator.csproj.CoreCompileInputs.cache
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\BasicDataValidator.dll
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\refint\BasicDataValidator.dll
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\BasicDataValidator.pdb
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\BasicDataValidator.genruntimeconfig.cache
+C:\Users\Badea Vlad\Desktop\Lab2 Iss\BasicDataValidator\BasicDataValidator\obj\Debug\net8.0\ref\BasicDataValidator.dll
