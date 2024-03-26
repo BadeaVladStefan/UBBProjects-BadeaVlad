@@ -1,0 +1,142 @@
+body, header {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #000;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 20px;
+    height: 50px;
+    padding: 10px;
+}
+
+.deliver-to {
+    margin-right: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    border: none;
+    padding: 3px;
+    height: 30px;
+    width: 700px;
+}
+
+.search-all {
+    background-color: #cccccc; 
+    padding: 7px;
+    border: none;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #131921;
+    padding: 10px;
+}
+
+.search-button {
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.search-button::after {
+    content: '\1F50D'; 
+    font-size: 20px;
+    color: #131921; 
+}
+
+.language {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color:#eeeeee;
+}
+
+.language img {
+    width: 30px; 
+    margin-right: 5px;
+    padding:5px;
+    height: 15px;
+
+}
+
+.language-text {
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    font-weight: bold;
+} 
+
+.signIn {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eeeeee;
+    font-family: Arial, sans-serif; 
+}
+
+.signIn-text {
+    font-size: 13px; 
+    line-height: -5px;
+}
+
+.signIn-bolded {
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+.return-order{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eeeeee;
+    font-family: Arial, sans-serif; 
+}
+
+.return-order-text {
+    font-size: 13px; 
+    line-height: -5px;
+}
+.return-order-bolded {
+    font-weight: bold;
+    font-size: 16px; 
+}
+.cart {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.cart img{
+    width: 50px; 
+    margin-right: 5px;
+    padding:5px;
+    height: 30px;
+}
+.cart-text {
+    color: #eeeeee;
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+    font-size: 16px; 
+}

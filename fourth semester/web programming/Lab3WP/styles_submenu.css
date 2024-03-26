@@ -1,0 +1,33 @@
+#submenu {
+    background-color: #232f3e; 
+    height: 40px; 
+    width: 100%; 
+    display: flex;
+    align-items: right;
+   
+}
+
+.submenu-all{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color:#eeeeee;
+    font-family: Arial, sans-serif; 
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.submenu-all img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+.submenu-text{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color:#eeeeee;
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+}

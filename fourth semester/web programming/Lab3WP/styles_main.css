@@ -1,0 +1,39 @@
+body {
+    background-image: url("photos/background.jpg");
+    background-size: cover;
+    background-position: 1% calc(1% + 100px);
+    background-attachment: fixed; 
+}
+
+.card-container {
+    position: fixed;
+    bottom: 0;
+    text-align: center; /* Align cards to the center */
+}
+
+.card {
+    display: inline-block;
+    background-color: white;
+    width: 360px;
+    height: 350px; /* Adjusted height for all cards */
+    margin: 10px;
+}
+
+.card-title {
+    font-family: Arial, sans-serif; 
+    font-size: 20px;
+    font-weight: bold;
+    text-align:justify;
+}
+
+.card a {
+    font-size: 15px;
+    margin: 10px;
+    text-align: left;
+    color: black;
+}
+
+.card table {
+    margin: 10px;
+    width: 100%;
+}
