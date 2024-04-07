@@ -1,21 +1,36 @@
+// DeleteF1DriverForm.tsx
 import React, { useState } from 'react';
+import axios from 'axios';
 import './DeleteF1DriverForm.css';
 
 interface DeleteF1DriverFormProps {
-    onDelete: (name: string) => void;
+    onDelete: (id: number) => void;
+    drivers: { id: number; name: string }[];
 }
 
-function DeleteF1DriverForm({ onDelete }: DeleteF1DriverFormProps) {
-    const [name, setName] = useState('');
+const DeleteF1DriverForm: React.FC<DeleteF1DriverFormProps> = ({ onDelete, drivers }) => {
+    const [id, setId] = useState<number>();
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (!name) {
-            alert('Please fill in the name field');
+        if (!id) {
+            alert('Please fill in the ID field');
             return;
         }
-        onDelete(name); 
-        setName('');
+    
+        const driverToDelete = drivers.find(driver => driver.id === id);
+        if (!driverToDelete) {
+            alert('Driver with this ID does not exist');
+            return;
+        }
+    
+        try {
+            await axios.delete(`http://localhost:5000/api/f1drivers/${id}`);
+            onDelete(id);
+            setId(undefined); // Reset ID after deletion
+        } catch (error) {
+            console.error('Error deleting F1 driver:', error);
+        }
     };
 
     return (
@@ -25,8 +40,8 @@ function DeleteF1DriverForm({ onDelete }: DeleteF1DriverFormProps) {
             </header>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label className="form-label">Name:</label>
-                    <input className="form-field" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                    <label className="form-label">ID:</label>
+                    <input className="form-field" type="number" value={id || ''} onChange={(e) => setId(parseInt(e.target.value))} />
                 </div>
                 <button className='button' type="submit">Delete Driver</button>
             </form>
