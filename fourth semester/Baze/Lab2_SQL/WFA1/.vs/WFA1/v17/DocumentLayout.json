@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|c:\\users\\badea vlad\\desktop\\lab2_sql\\wfa1\\wfa1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\wfa1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|solutionrelative:wfa1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\wfa1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|solutionrelative:wfa1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\wfa1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|solutionrelative:wfa1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\wfa1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|solutionrelative:wfa1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|c:\\users\\badea vlad\\desktop\\lab2_sql\\wfa1\\wfa1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|solutionrelative:wfa1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\wfa1\\both_configs.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|solutionrelative:wfa1\\both_configs.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\wfa1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AEAFA78A-E0DB-4FD1-A922-0910250D8D99}|WFA1\\WFA1.csproj|solutionrelative:wfa1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +30,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\WFA1\\App.config",
               "RelativeDocumentMoniker": "WFA1\\App.config",
               "ToolTip": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\WFA1\\App.config",
               "RelativeToolTip": "WFA1\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-03-26T13:44:37.74Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "both_configs.txt",
+              "DocumentMoniker": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\WFA1\\both_configs.txt",
+              "RelativeDocumentMoniker": "WFA1\\both_configs.txt",
+              "ToolTip": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\WFA1\\both_configs.txt",
+              "RelativeToolTip": "WFA1\\both_configs.txt",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-07T11:38:23.406Z",
               "EditorCaption": ""
             },
             {
@@ -49,14 +67,14 @@
               "RelativeDocumentMoniker": "WFA1\\Form1.cs",
               "ToolTip": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\WFA1\\Form1.cs",
               "RelativeToolTip": "WFA1\\Form1.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwFsAAAAAAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwEIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-24T08:50:15.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\WFA1\\Form1.cs",
               "RelativeDocumentMoniker": "WFA1\\Form1.cs",
@@ -68,13 +86,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\WFA1\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WFA1\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\Badea Vlad\\Desktop\\Lab2_SQL\\WFA1\\WFA1\\Form1.Designer.cs",
               "RelativeToolTip": "WFA1\\Form1.Designer.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAMwFUAAABYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-24T09:37:09.657Z",
               "EditorCaption": ""

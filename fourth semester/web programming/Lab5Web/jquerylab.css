@@ -1,0 +1,33 @@
+.photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.screen {
+  position: absolute;
+  display: none;
+}
+
+.screen.visible {
+  display: block;
+}
+
+#screen1{
+  background-color: rgba(108, 33, 66, 0.5);
+}
+
+#screen2{
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+#screen3{
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+#screen4{
+  background-color: rgba(255, 0, 0, 0.5);
+}

@@ -60,6 +60,7 @@ public class IfStmt implements IStmt {
         if (!cond.getType().equals(new BoolType())) {
             throw new MyException("conditional expression is not a boolean");
         }
+
         else {
             BoolValue v1 = (BoolValue) cond;
             boolean b1;

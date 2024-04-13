@@ -8,3 +8,13 @@ C:\Users\Badea Vlad\Desktop\Lab1_SQL\WFA1\WFA1\obj\Debug\WFA1.csproj.CoreCompile
 C:\Users\Badea Vlad\Desktop\Lab1_SQL\WFA1\WFA1\obj\Debug\WFA1.exe
 C:\Users\Badea Vlad\Desktop\Lab1_SQL\WFA1\WFA1\obj\Debug\WFA1.pdb
 C:\Users\Badea Vlad\Desktop\Lab1_SQL\WFA1\WFA1\obj\Debug\WFA1.Form1.resources
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\bin\Debug\WFA1.exe.config
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\bin\Debug\WFA1.exe
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\bin\Debug\WFA1.pdb
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\obj\Debug\WFA1.csproj.AssemblyReference.cache
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\obj\Debug\WFA1.Form1.resources
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\obj\Debug\WFA1.Properties.Resources.resources
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\obj\Debug\WFA1.csproj.GenerateResource.cache
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\obj\Debug\WFA1.csproj.CoreCompileInputs.cache
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\obj\Debug\WFA1.exe
+C:\Users\Badea Vlad\Desktop\Lab2_SQL\WFA1\WFA1\obj\Debug\WFA1.pdb
