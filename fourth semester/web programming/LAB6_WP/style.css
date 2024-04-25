@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(195, 234, 147);
+}
+
+.update_form{
+    display: none;
+    float: left;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+
+
+#select-type{
+
+    margin-left: 10px;
+    padding-right:20px;
+
+}
+
+
+#select-format{
+    margin-right: 625px;
+    padding-left: 30px;
+}
+
+.index{
+    padding-top: 100px;
+    padding-left: 600px;
+}
+
+.display_modify{
+    padding-left: 50px;
+    padding-top: 80px;
+}
+
+.display_delete{
+    padding-left: 50px;
+}
+
+.display_add{
+    padding-left: 50px;
+    padding-top: 80px;
+}
+
+td{
+    border: 1px solid;
+}
+
+th{
+    padding: 30px;
+}
+
+.home{
+    margin-left: 50px;
+}
+
+.add_form{
+    float: left;
+    padding-left: 50px;
+    padding-top: 44px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+h2 {
+    margin-right: 0px;
+}
+select {
+    width: 150px;
+}
+
+
+.previous-filter{
+    margin-left: 100px;
+}
+#previous-filter{
+    padding-top: 25px;
+    padding-left: 625px;
+}
