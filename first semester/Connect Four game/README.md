@@ -1,5 +1,5 @@
 Connect Four is a Python game boasts a sleek Tkinter interface
-for easy play and challenging AI opponents across various
+for easy play and challenging computer opponents across various
 difficulty levels, leveraging object-oriented programming.
 
 
