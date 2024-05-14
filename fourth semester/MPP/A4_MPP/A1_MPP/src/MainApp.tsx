@@ -12,7 +12,6 @@ import DeleteDriverRaceHistoryForm from './components/DeleteDriverRaceHistoryFor
 import UpdateDriverRaceHistoryForm from './components/UpdateDriverRaceHistoryForm';
 import GetDriverRaceHistoryByIdForm from './components/GetDriverRaceHistoryByIdForm';
 import GenerateRandomDriverRaceHistoryForm from './components/generateRandomDriverRaceHistory';
-import getHowManyForm from './components/getHowManyForm';
 import './App.css';
 
 interface F1Driver {
@@ -162,14 +161,6 @@ function MainApp() {
         }
     };
 
-    const handleHowManyDriverRaceHistory = async () => {
-        try {
-            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:5000/api/driverracehistory');
-            setDriverHistory(updatedDriverHistoryResponse.data || []);
-        } catch (error) {
-            console.error('Error getting how many appearances:', error);
-        }
-    };
         
 
     return (
