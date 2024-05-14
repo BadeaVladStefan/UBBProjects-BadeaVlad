@@ -5,9 +5,21 @@ import f1DriverRoutes from './routes/f1DriverRoutes';
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/MPP')
-    .then(() => console.log('Connected to MongoDB'))
-    .catch(err => console.error('Error connecting to MongoDB', err));
+const mongoURI = process.env.MONGODB_URI;
+
+if (!mongoURI) {
+  throw new Error('MongoDB URI is not defined in the environment variables.');
+}
+
+// Now you can safely use mongoURI as a string
+mongoose.connect(mongoURI)
+.then(() => {
+  console.log('Connected to MongoDB');
+})
+.catch((error) => {
+  console.error('Error connecting to MongoDB:', error);
+});
+
 
 
 // Middleware
