@@ -43,7 +43,7 @@ function MainApp() {
     useEffect(() => {
         const fetchDrivers = async () => {
             try {
-                const response = await axios.get<F1Driver[]>(`http://localhost:5000/api/f1drivers`);
+                const response = await axios.get<F1Driver[]>(`http://localhost:10000/api/f1drivers`);
                 setDrivers(response.data || []);
                 const totalCount = response.headers['x-total-count'];
                 setTotalPages(Math.ceil(totalCount / perPage));
@@ -73,7 +73,7 @@ function MainApp() {
     useEffect(() => {
         const fetchDriverHistory = async () => {
             try {
-                const response = await axios.get<DriverRaceHistory[]>(`http://localhost:5000/api/driverracehistory`);
+                const response = await axios.get<DriverRaceHistory[]>(`http://localhost:10000/api/driverracehistory`);
                 setDriverHistory(response.data || []);
             } catch (error) {
                 console.error('Error fetching driver race history:', error);
@@ -86,7 +86,7 @@ function MainApp() {
 
     const handleAddDriver = async () => {
         try {
-            const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:5000/api/f1drivers');
+            const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:10000/api/f1drivers');
             setDrivers(updatedDriversResponse.data || []);
         } catch (error) {
             console.error('Error adding driver:', error);
@@ -96,20 +96,20 @@ function MainApp() {
     const handleGenerateRandomDrivers = async () =>
         {
             try {
-                const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:5000/api/f1drivers');
+                const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:10000/api/f1drivers');
                 setDrivers(updatedDriversResponse.data || []);
             } catch (error) {
                 console.error('Error adding driver:', error);
             }
             finally{
-                const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:5000/api/f1drivers');
+                const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:10000/api/f1drivers');
                 setDrivers(updatedDriversResponse.data || []);
             }
         };
     
     const handleDeleteDriver = async () => {
         try {
-            const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:5000/api/f1drivers');
+            const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:10000/api/f1drivers');
             setDrivers(updatedDriversResponse.data || []);
         } catch (error) {
             console.error('Error deleting driver:', error);
@@ -118,7 +118,7 @@ function MainApp() {
 
     const handleUpdateDriver = async () => {
         try {
-            const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:5000/api/f1drivers');
+            const updatedDriversResponse = await axios.get<F1Driver[]>('http://localhost:10000/api/f1drivers');
             setDrivers(updatedDriversResponse.data || []);
         } catch (error) {
             console.error('Error updating driver:', error);
@@ -127,7 +127,7 @@ function MainApp() {
 
     const handleAddDriverRaceHistory = async () => {
         try {
-            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:5000/api/driverracehistory');
+            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:10000/api/driverracehistory');
             setDriverHistory(updatedDriverHistoryResponse.data || []);
         } catch (error) {
             console.error('Error adding driver race history:', error);
@@ -136,7 +136,7 @@ function MainApp() {
 
     const handleDeleteDriverRaceHistory = async () => {
         try {
-            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:5000/api/driverracehistory');
+            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:10000/api/driverracehistory');
             setDriverHistory(updatedDriverHistoryResponse.data || []);
         } catch (error) {
             console.error('Error deleting driver race history:', error);
@@ -145,7 +145,7 @@ function MainApp() {
 
     const handleUpdateDriverRaceHistory = async () => {
         try {
-            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:5000/api/driverracehistory');
+            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:10000/api/driverracehistory');
             setDriverHistory(updatedDriverHistoryResponse.data || []);
         } catch (error) {
             console.error('Error updating race history:', error);
@@ -154,7 +154,7 @@ function MainApp() {
 
     const handleGenerateRandomDriverRaceHistory = async () => {
         try {
-            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:5000/api/driverracehistory');
+            const updatedDriverHistoryResponse = await axios.get<DriverRaceHistory[]>('http://localhost:10000/api/driverracehistory');
             setDriverHistory(updatedDriverHistoryResponse.data || []);
         } catch (error) {
             console.error('Error generating random race history:', error);
