@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import f1DriverRoutes from './routes/f1DriverRoutes';
+import http from 'http';
 
 const app = express();
 
@@ -11,7 +12,6 @@ if (!mongoURI) {
   throw new Error('MongoDB URI is not defined in the environment variables.');
 }
 
-// Now you can safely use mongoURI as a string
 mongoose.connect(mongoURI)
 .then(() => {
   console.log('Connected to MongoDB');
@@ -19,8 +19,6 @@ mongoose.connect(mongoURI)
 .catch((error) => {
   console.error('Error connecting to MongoDB:', error);
 });
-
-
 
 // Middleware
 app.use(express.json());
@@ -33,10 +31,16 @@ app.use((_req, res, next) => {
     next();
 });
 
+// Login route
+app.get('/login', (req, res) => {
+    res.send('Login page'); // Response for the login page
+});
+
 // Routes
 app.use('/api', f1DriverRoutes);
 
-const PORT = 5000;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 5000;
+const server = http.createServer(app);
+server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
