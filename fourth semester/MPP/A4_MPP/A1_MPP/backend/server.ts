@@ -31,15 +31,10 @@ app.use((_req, res, next) => {
     next();
 });
 
-// Login route
-app.get('/login', (_, res) => {
-    res.send('Login page'); // Response for the login page
-});
-
 // Routes
 app.use('/api', f1DriverRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 const server = http.createServer(app);
 server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
