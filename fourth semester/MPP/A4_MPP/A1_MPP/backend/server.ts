@@ -32,7 +32,7 @@ app.use((_req, res, next) => {
 });
 
 // Login route
-app.get('/login', (req, res) => {
+app.get('/login', (_, res) => {
     res.send('Login page'); // Response for the login page
 });
 
