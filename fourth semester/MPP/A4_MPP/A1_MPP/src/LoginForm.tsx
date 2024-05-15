@@ -9,7 +9,7 @@ const LoginForm = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/login', { username, password });
+      const response = await axios.post('https://ubbprojects-badeavlad.onrender.com/api/login', { username, password });
       // Store JWT token in local storage
       localStorage.setItem('token', response.data.token);
       // Redirect to main application page

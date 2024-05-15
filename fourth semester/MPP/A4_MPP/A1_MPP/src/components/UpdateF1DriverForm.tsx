@@ -30,7 +30,7 @@ function UpdateF1DriverForm({ onUpdate, drivers }: Props) {
             };
 
             // Send PUT request to the backend API with the updated data
-            await axios.put(`http://localhost:5000/api/f1drivers/${driverToUpdate._id}`, updatedData);
+            await axios.put(`https://ubbprojects-badeavlad.onrender.com/api/f1drivers/${driverToUpdate._id}`, updatedData);
 
             // Call the onUpdate function to update the drivers list
             onUpdate(driverToUpdate._id);

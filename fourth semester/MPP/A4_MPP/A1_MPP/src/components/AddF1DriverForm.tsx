@@ -23,7 +23,7 @@ const AddF1DriverForm: React.FC<AddF1DriverFormProps> = ({ onAdd }) => {
             return;
         }
         try {
-            await axios.post('http://localhost:5000/api/f1drivers', { DriverName: name, Team: team, Age: ageValue });
+            await axios.post('https://ubbprojects-badeavlad.onrender.com/api/f1drivers', { DriverName: name, Team: team, Age: ageValue });
             onAdd();
             setName('');
             setTeam('');

@@ -12,7 +12,7 @@ const GenerateRandomDriverRaceHistoryForm: React.FC<GenerateRandomDriverRaceHist
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/driverracehistory/generate/' + numberOfEntries);
+            await axios.post('https://ubbprojects-badeavlad.onrender.com/driverracehistory/generate/' + numberOfEntries);
             onGenerate(); // Call the onGenerate function after successfully generating random driver race history entries
         } catch (error) {
             console.error('Error generating random driver race history entries:', error);

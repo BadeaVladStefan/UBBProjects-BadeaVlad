@@ -24,7 +24,7 @@ const DeleteF1DriverForm: React.FC<Props> = ({ onDelete }) => {
     useEffect(() => {
         const fetchDrivers = async () => {
             try {
-                const response = await axios.get<DriverRaceHistory[]>('http://localhost:5000/api/driverracehistory');
+                const response = await axios.get<DriverRaceHistory[]>('https://ubbprojects-badeavlad.onrender.com/api/driverracehistory');
                 setDriverHistory(response.data || []);
             } catch (error) {
                 console.error('Error fetching drivers:', error);
@@ -51,7 +51,7 @@ const DeleteF1DriverForm: React.FC<Props> = ({ onDelete }) => {
         }
 
         try {
-            await axios.delete(`http://localhost:5000/api/driverracehistory/${driverToDelete._id}`);
+            await axios.delete(`https://ubbprojects-badeavlad.onrender.com/api/driverracehistory/${driverToDelete._id}`);
             onDelete();
             setName('');
         } catch (error) {

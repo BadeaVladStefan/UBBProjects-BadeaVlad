@@ -12,7 +12,7 @@ const GenerateRandomDriversForm: React.FC<GenerateRandomDriversFormProps> = ({ o
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/f1drivers/generate/' + numberOfDrivers);
+            await axios.post('https://ubbprojects-badeavlad.onrender.com/api/f1drivers/generate/' + numberOfDrivers);
             onGenerate(); // Call the onGenerate function after successfully generating random drivers
         } catch (error) {
             console.error('Error generating random drivers:', error);

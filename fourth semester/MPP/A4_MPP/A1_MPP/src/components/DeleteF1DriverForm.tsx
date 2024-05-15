@@ -31,7 +31,7 @@ function DeleteF1DriverForm({ onDelete, drivers }: Props) {
     
         try {
             // Send delete request to the backend API with the driver's ID
-            await axios.delete(`http://localhost:5000/api/f1drivers/${driverToDelete._id}`);
+            await axios.delete(`https://ubbprojects-badeavlad.onrender.com/api/f1drivers/${driverToDelete._id}`);
             // Call the onDelete function to update the drivers list
             onDelete(driverToDelete._id);
             // Clear the input field

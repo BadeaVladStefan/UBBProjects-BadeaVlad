@@ -21,7 +21,7 @@ const AddRandomDriversForm: React.FC<AddRandomDriversFormProps> = ({ onGenerate 
             return;
         }
         try {
-            await axios.post(`http://localhost:5000/api/f1drivers/generate/${howMany}}`);
+            await axios.post(`https://ubbprojects-badeavlad.onrender.com/api/f1drivers/generate/${howMany}}`);
             onGenerate();
             setHowMany('');
         } catch (error) {

@@ -23,7 +23,7 @@ const AddDriverRaceHistoryForm: React.FC<AddDriverRaceHistoryFormProps> = ({ onA
     useEffect(() => {
         const fetchDrivers = async () => {
             try {
-                const response = await axios.get<Driver[]>('http://localhost:5000/api/f1drivers');
+                const response = await axios.get<Driver[]>('https://ubbprojects-badeavlad.onrender.com/api/f1drivers');
                 setDrivers(response.data || []);
             } catch (error) {
                 console.error('Error fetching drivers:', error);
@@ -62,7 +62,7 @@ const AddDriverRaceHistoryForm: React.FC<AddDriverRaceHistoryFormProps> = ({ onA
         }
 
         try {
-            await axios.post('http://localhost:5000/api/driverracehistory', {
+            await axios.post('https://ubbprojects-badeavlad.onrender.com/api/driverracehistory', {
                 DriverId: selectedDriverId,
                 DriverName: driverName,
                 RaceName: raceName,

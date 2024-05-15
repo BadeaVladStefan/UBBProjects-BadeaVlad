@@ -32,7 +32,7 @@ function UpdateDriverRaceHistoryForm({ onUpdate, driverHistory }: Props) {
             };
 
             // Send PUT request to the backend API with the updated data
-            await axios.put(`http://localhost:5000/api/driverracehistory/${historyToUpdate._id}`, updatedData);
+            await axios.put(`https://ubbprojects-badeavlad.onrender.com/api/driverracehistory/${historyToUpdate._id}`, updatedData);
 
             // Call the onUpdate function to update the driver race history list
             onUpdate(historyToUpdate._id);

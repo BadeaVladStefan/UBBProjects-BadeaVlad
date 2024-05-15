@@ -9,7 +9,7 @@ const RegisterForm = () => {
 
   const handleRegister = async () => {
     try {
-      await axios.post('http://localhost:5000/api/register', { username, password });
+      await axios.post('https://ubbprojects-badeavlad.onrender.com/api/register', { username, password });
       // Redirect to login page after successful registration
       // Replace '/login' with your login route
       window.location.href = '/login';
