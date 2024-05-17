@@ -20,7 +20,7 @@ function GetDriverRaceHistoryByIdForm({ driverHistory, onSubmit }: Props) {
 
         try {
             // Send request to backend to count entries
-            const response = await fetch('/api/countDriverRaceHistoryOccurrences', {
+            const response = await fetch('https://ubbprojects-badeavlad.onrender.com/api/countDriverRaceHistoryOccurrences', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

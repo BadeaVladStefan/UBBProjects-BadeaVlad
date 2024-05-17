@@ -3,6 +3,8 @@ import * as f1DriverController from '../controllers/f1DriverController';
 
 const router = express.Router();
 
+router.use(f1DriverController.authenticateToken); // Apply to all routes below
+
 // F1Driver routes
 router.get('/f1drivers', f1DriverController.getAllF1Drivers);
 router.get('/f1drivers/:id', f1DriverController.getF1DriverById);

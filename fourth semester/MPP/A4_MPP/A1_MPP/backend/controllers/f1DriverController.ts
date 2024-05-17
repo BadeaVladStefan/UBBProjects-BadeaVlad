@@ -1,6 +1,35 @@
-import { Request, Response } from 'express';
+import { Request, Response, NextFunction } from 'express';
+import * as jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
-const jwt = require('jsonwebtoken');
+
+declare global {
+    namespace Express {
+        interface Request {
+            user?: {
+                userId: string;
+            };
+        }
+    }
+}
+
+
+export const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (!token) {
+        return res.sendStatus(401); // Unauthorized
+    }
+
+    jwt.verify(token, 'sorin', (err: any, user: any) => {
+        if (err) {
+            return res.sendStatus(403); // Forbidden
+        }
+        req.user = user;
+        next();
+    });
+};
+
 
 const userSchema = new mongoose.Schema({
     username: { type: String, required: true, unique: true },
@@ -66,8 +95,10 @@ export const loginUser = async (req: Request, res: Response) => {
 const F1DriverSchema = new mongoose.Schema({
     DriverName: String,
     Team: String,
-    Age: Number
+    Age: Number,
+    UserId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true } // Reference to the user
 });
+
 
 // Create Mongoose model for F1Driver
 const F1DriverModel = mongoose.model('f1drivers', F1DriverSchema);
@@ -77,7 +108,8 @@ const F1DriverModel = mongoose.model('f1drivers', F1DriverSchema);
 // Route handlers
 export const getAllF1Drivers = async (_req: Request, res: Response) => {
     try {
-        const result = await F1DriverModel.find(); // Retrieve all F1 drivers
+        const userId = _req.user?.userId;
+        const result = await F1DriverModel.find({ UserId: userId });
         console.log('Fetched F1 drivers:', result); // Log fetched data
         res.status(200).json(result);
     } catch (error) {
@@ -158,13 +190,16 @@ export const generateRandomF1Drivers = async (req: Request, res: Response) => {
 };
 
 // Define MongoDB schema for DriverRaceHistory
+// Define MongoDB schema for DriverRaceHistory
 const DriverRaceHistorySchema = new mongoose.Schema({
     DriverId: mongoose.Types.ObjectId,
     DriverName: String,
     RaceName: String,
     Position: Number,
-    Points: Number
+    Points: Number,
+    UserId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true } // Reference to the user
 });
+
 
 // Create Mongoose model for DriverRaceHistory
 const DriverRaceHistoryModel = mongoose.model('driverracehistories', DriverRaceHistorySchema);

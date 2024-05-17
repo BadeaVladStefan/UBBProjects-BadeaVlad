@@ -36,9 +36,24 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.countDriverRaceHistoryOccurrences = exports.generateRandomDriverRaceHistory = exports.deleteDriverRaceHistory = exports.updateDriverRaceHistory = exports.createDriverRaceHistory = exports.getDriverRaceHistoryById = exports.getAllDriverRaceHistory = exports.generateRandomF1Drivers = exports.deleteF1Driver = exports.updateF1Driver = exports.createF1Driver = exports.getF1DriverById = exports.getAllF1Drivers = exports.loginUser = exports.registerUser = void 0;
+exports.countDriverRaceHistoryOccurrences = exports.generateRandomDriverRaceHistory = exports.deleteDriverRaceHistory = exports.updateDriverRaceHistory = exports.createDriverRaceHistory = exports.getDriverRaceHistoryById = exports.getAllDriverRaceHistory = exports.generateRandomF1Drivers = exports.deleteF1Driver = exports.updateF1Driver = exports.createF1Driver = exports.getF1DriverById = exports.getAllF1Drivers = exports.loginUser = exports.registerUser = exports.authenticateToken = void 0;
+var jwt = require("jsonwebtoken");
 var mongoose_1 = require("mongoose");
-var jwt = require('jsonwebtoken');
+var authenticateToken = function (req, res, next) {
+    var authHeader = req.headers['authorization'];
+    var token = authHeader && authHeader.split(' ')[1];
+    if (!token) {
+        return res.sendStatus(401); // Unauthorized
+    }
+    jwt.verify(token, 'sorin', function (err, user) {
+        if (err) {
+            return res.sendStatus(403); // Forbidden
+        }
+        req.user = user;
+        next();
+    });
+};
+exports.authenticateToken = authenticateToken;
 var userSchema = new mongoose_1.default.Schema({
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true },
@@ -116,26 +131,29 @@ exports.loginUser = loginUser;
 var F1DriverSchema = new mongoose_1.default.Schema({
     DriverName: String,
     Team: String,
-    Age: Number
+    Age: Number,
+    UserId: { type: mongoose_1.default.Schema.Types.ObjectId, ref: 'User', required: true } // Reference to the user
 });
 // Create Mongoose model for F1Driver
 var F1DriverModel = mongoose_1.default.model('f1drivers', F1DriverSchema);
 // Function to generate a random name
 // Route handlers
 var getAllF1Drivers = function (_req, res) { return __awaiter(void 0, void 0, void 0, function () {
-    var result, error_3;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    var userId, result, error_3;
+    var _a;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0:
-                _a.trys.push([0, 2, , 3]);
-                return [4 /*yield*/, F1DriverModel.find()];
+                _b.trys.push([0, 2, , 3]);
+                userId = (_a = _req.user) === null || _a === void 0 ? void 0 : _a.userId;
+                return [4 /*yield*/, F1DriverModel.find({ UserId: userId })];
             case 1:
-                result = _a.sent();
+                result = _b.sent();
                 console.log('Fetched F1 drivers:', result); // Log fetched data
                 res.status(200).json(result);
                 return [3 /*break*/, 3];
             case 2:
-                error_3 = _a.sent();
+                error_3 = _b.sent();
                 console.error('Error fetching F1 drivers:', error_3); // Log error
                 res.status(500).json({ message: error_3.message });
                 return [3 /*break*/, 3];
@@ -282,12 +300,14 @@ var generateRandomF1Drivers = function (req, res) { return __awaiter(void 0, voi
 }); };
 exports.generateRandomF1Drivers = generateRandomF1Drivers;
 // Define MongoDB schema for DriverRaceHistory
+// Define MongoDB schema for DriverRaceHistory
 var DriverRaceHistorySchema = new mongoose_1.default.Schema({
     DriverId: mongoose_1.default.Types.ObjectId,
     DriverName: String,
     RaceName: String,
     Position: Number,
-    Points: Number
+    Points: Number,
+    UserId: { type: mongoose_1.default.Schema.Types.ObjectId, ref: 'User', required: true } // Reference to the user
 });
 // Create Mongoose model for DriverRaceHistory
 var DriverRaceHistoryModel = mongoose_1.default.model('driverracehistories', DriverRaceHistorySchema);
