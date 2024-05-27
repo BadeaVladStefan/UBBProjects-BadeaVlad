@@ -16,8 +16,6 @@ declare @oldData varchar(100)
 declare @newData varchar(100)
 waitfor delay '00:00:10'
 update Formula1Team set @oldData=team_principal, team_principal='New Team Principal', @newData=team_principal where team_id=1
-exec sp_log_changes @oldData, @newData, 'Non-Repeatable Reads 1: update'
-exec sp_log_locks 'Non-Repeatable Reads 1: after update'
 commit tran
 
 -- Query Console 2
@@ -29,8 +27,6 @@ set transaction isolation level read committed
 --set transaction isolation level repeatable read --solution
 begin tran
 select * from Formula1Team
-exec sp_log_locks 'Non-Repeatable Reads 2: between selects'
 waitfor delay '00:00:10'
 select * from Formula1Team
-exec sp_log_locks 'Non-Repeatable Reads 2: after both selects'
 commit tran
