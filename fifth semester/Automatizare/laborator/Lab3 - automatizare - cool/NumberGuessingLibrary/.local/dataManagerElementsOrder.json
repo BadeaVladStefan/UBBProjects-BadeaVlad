@@ -1,0 +1,49 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GenerateRandomNumber.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "randomNumber"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "CompareGuessWithNumber.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "comparisonResult",
+        "playerGuess",
+        "randomNumber"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "NumberGuessingGame.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "tries&Sequence_1",
+        "comparisonMsg&Sequence_1",
+        "playerGuess&Sequence_1",
+        "randomNumber&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "maxTries"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

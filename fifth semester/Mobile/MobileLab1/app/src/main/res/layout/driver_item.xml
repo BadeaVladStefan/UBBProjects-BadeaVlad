@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Container for the driver info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:elevation="2dp"
+        tools:ignore="UselessParent">
+
+        <!-- Driver Name -->
+        <TextView
+            android:id="@+id/driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />  <!-- Centered -->
+
+        <!-- Team -->
+        <TextView
+            android:id="@+id/driver_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />  <!-- Centered -->
+
+        <!-- Nationality, Age, and Wins Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+        android:paddingTop="4dp">
+
+        <!-- Nationality Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nationality: "
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <!-- Nationality Value -->
+        <TextView
+            android:id="@+id/driver_nationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp" />  <!-- Space between nationality and age -->
+
+        <!-- Age Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: "
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <!-- Age Value -->
+        <TextView
+            android:id="@+id/driver_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp" />  <!-- Space between age and wins -->
+
+        <!-- Wins Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wins: "
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <!-- Wins Value -->
+        <TextView
+            android:id="@+id/driver_wins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp" />  <!-- Space to the right -->
+
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,154 @@
+FLCD Seminar 3
+
+GRAMMARS
+----------------------------------------
+
+1.Given the grammar G = (N,Sigma,P,S)
+
+	N = {S,C}
+	Sigma = {a,b}
+	P: S -> ab | aCSb
+		C -> S|bSb
+		CS -> b,
+prove that w = ab(ab^2)^2 e L(G).
+
+(ab)^2 = abab != aabb = a^2b^2
+
+w = ab(ab^2)^2=ab(abb)^2=ababbabb
+
+
+S => aCSB =>
+  2       4
+  
+		  2
+=>abSbSb =>
+		  1
+
+=> ababbabb = w
+
+	4	   *
+=>S=>w => S=>w=>w e L(G)
+--------------------------------------
+
+2. given the grammar G  = (N,Sigma,P,S)
+	N = {S}
+	Sigma = {a,b,c}
+	P: S -> a^2S|bc,
+find L(G)
+
+Let L = {a^(2k)bc | k E N}
+and prove that L = L(G)
+
+by double inclusion:
+
+I. L *symbol for included and equal* L(G)
+<=> *any symbol* w e L, w e L(G) <=> *any symbol* k e N a^(2k)bc e L(G)
+TAKE: P(k): a^(2k)bc e L(G), and prove *any symbol* k e N => P(k) True
+
+--a) verification step
+P(0): a^0bc e L(G) <=> 
+bc e L(G) - what do we want to prove
+
+
+S => bc - what we prove
+  2
+  
+--b)prove step:
+assume p(k) true <=> a^(2k)bc e L(G)
+										(induction hypothesis)
+					  *
+					S => a^(2k)bc 
+
+prove P(k+1) true <=> a^(2k+2)bc e L(G)
+
+					  *
+					S => a^(2k+2)bc
+		   *                               *		
+S => a^2S => a^2a^(2k)bc = a^(2k+2)bc => S => a^(2k+2)bc =>P(k+1) True 
+   1     ind.
+		 hyp.
+		 
+from a), b) => P(k) true *any symbol* k e N => I. true 
+
+II. L(G) *symbol for included and equal* L
+
+
+
+	S => bc = a^0bc 
+	  2
+
+	S => a^2S => a^2bc
+	  1       2		
+	  
+			  => a^4S =>a^4bc
+			   1	  2
+			   
+					  =>a^6S => ...
+					  1		 2
+							
+							=>...
+							1
+
+sequences of the shape a^(2n)bc where n e N. It follows that the
+grammar doesn't generate anything else
+
+obs.: This inclusion may also be discharged by induction
+
+-------------------------------------------------------------
+3. problema care se da si la examen:
+
+Find a grammar that generates L = {0^(n)1^(n)2^(m) | n,m e N*}
+
+	N = {A, B, S}
+	Sigma = {0,1,2}
+	P: A -> 0A1 | 01
+	   B -> 2B|2
+	   S -> AB
+
+I. L *symbol for included and equal* L(G) <=> *any symbol* n,m e N*, 0^(n)1^(n)2^(m) e L(G)
+Let n, m e N* be fixed
+
+PROP:
+	   n
+(a): A =>0^(n)1^(n) *any symbol* n e N*
+
+		m
+(b): B => 2^(m) *any symbol* m e N*
+
+						m
+S => AB => 0^(n)1^(n)B => 0^(n)1^(n)2^(m)
+   5 	(a)			   (b)
+
+ n+m+1
+S  =>  0^(n)1^(n)2^(m) => 0^(n)1^(n)2^(m) e L(G)
+
+			n
+a) P(n) : A => 0^(n)1^(n), if n e N*
+		
+		1
+P(1): A => 01 (based on p2.)
+
+			 k
+then P(k): A =>	0^(k)1^(k) true
+
+			   k+1
+prove P(k+1): A => 0^(k+1)1^(k+1) also true
+
+		 k
+A => 0A1  => 00^(k)1^(k)1 => 0^(k+1)1^(k+1) => P(k+1) true
+  1      hyp
+  
+	 n
+=> A => 0^(n)1^(n), *any symbol* n e N*
+
+asemanator si pentru B:
+.....
+
+I. L(G) *symbol for included and equal* L
+
+	1.fac acel Binary tree pentru A -> A only generates sequences of shape 0^(n)1^(n), n e N*
+	2.fac acel Binary tree pentru B -> B only generates sequences of shape 2^(m), m e N*
+	
+din 1,2,S => AB = the only prod for Seminar
+
+=> S only generate 0^(n)1^(n)2^(m), n,m e N*

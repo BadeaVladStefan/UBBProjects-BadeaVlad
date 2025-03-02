@@ -1,0 +1,29 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Lab1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "userAnswersArray&Sequence_2",
+        "userAnswersArray&Sequence_7",
+        "difficulty&Sequence_2",
+        "questions&Sequence_2",
+        "answers&Sequence_2",
+        "userAnswer&Sequence_2",
+        "score&Sequence_2",
+        "currentQuestion&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

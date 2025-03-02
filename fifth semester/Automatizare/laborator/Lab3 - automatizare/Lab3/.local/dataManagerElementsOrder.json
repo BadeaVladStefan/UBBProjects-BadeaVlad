@@ -1,0 +1,59 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "userChoice&Sequence_1",
+        "computerChoice&Sequence_1",
+        "winner&Sequence_1",
+        "choices&Sequence_1",
+        "numberOfGames&Sequence_1",
+        "ok&Sequence_1",
+        "roundHistory&Sequence_1",
+        "userWins&Sequence_1",
+        "computerWins&Sequence_1",
+        "bestOfString&Sequence_1",
+        "bestOfInteger&Sequence_1",
+        "winnerString&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MainFlowchart.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outputMessage&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "userWins",
+        "computerWins",
+        "roundHistory"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SecondFlowChart.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "userWins",
+        "computerWins",
+        "winnerString"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

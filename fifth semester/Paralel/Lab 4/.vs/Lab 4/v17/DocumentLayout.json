@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Stefan\\Desktop\\Lab 4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|c:\\users\\stefan\\desktop\\lab 4\\lab 4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|solutionrelative:lab 4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|C:\\Users\\Stefan\\Desktop\\Lab 4\\lab 4\\implementation\\asyncawaittasksmechanism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|solutionrelative:lab 4\\implementation\\asyncawaittasksmechanism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|C:\\Users\\Stefan\\Desktop\\Lab 4\\lab 4\\implementation\\taskmechanism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|solutionrelative:lab 4\\implementation\\taskmechanism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|C:\\Users\\Stefan\\Desktop\\Lab 4\\lab 4\\implementation\\directcallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|solutionrelative:lab 4\\implementation\\directcallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|C:\\Users\\Stefan\\Desktop\\Lab 4\\lab 4\\model\\stateobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|solutionrelative:lab 4\\model\\stateobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|C:\\Users\\Stefan\\Desktop\\Lab 4\\lab 4\\utils\\httputils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA019625-923A-4E37-BAEE-F9E7AC984BA3}|Lab 4\\Lab 4.csproj|solutionrelative:lab 4\\utils\\httputils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Program.cs",
+              "RelativeDocumentMoniker": "Lab 4\\Program.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Program.cs",
+              "RelativeToolTip": "Lab 4\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:39:47.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DirectCallBack.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Implementation\\DirectCallBack.cs",
+              "RelativeDocumentMoniker": "Lab 4\\Implementation\\DirectCallBack.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Implementation\\DirectCallBack.cs",
+              "RelativeToolTip": "Lab 4\\Implementation\\DirectCallBack.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAswA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:39:47.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskMechanism.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Implementation\\TaskMechanism.cs",
+              "RelativeDocumentMoniker": "Lab 4\\Implementation\\TaskMechanism.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Implementation\\TaskMechanism.cs",
+              "RelativeToolTip": "Lab 4\\Implementation\\TaskMechanism.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwDQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:39:47.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AsyncAwaitTasksMechanism.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Implementation\\AsyncAwaitTasksMechanism.cs",
+              "RelativeDocumentMoniker": "Lab 4\\Implementation\\AsyncAwaitTasksMechanism.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Implementation\\AsyncAwaitTasksMechanism.cs",
+              "RelativeToolTip": "Lab 4\\Implementation\\AsyncAwaitTasksMechanism.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwBEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:39:47.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HttpUtils.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Utils\\HttpUtils.cs",
+              "RelativeDocumentMoniker": "Lab 4\\Utils\\HttpUtils.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Utils\\HttpUtils.cs",
+              "RelativeToolTip": "Lab 4\\Utils\\HttpUtils.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:39:47.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StateObject.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Model\\StateObject.cs",
+              "RelativeDocumentMoniker": "Lab 4\\Model\\StateObject.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\Lab 4\\Lab 4\\Model\\StateObject.cs",
+              "RelativeToolTip": "Lab 4\\Model\\StateObject.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:39:47.669Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
