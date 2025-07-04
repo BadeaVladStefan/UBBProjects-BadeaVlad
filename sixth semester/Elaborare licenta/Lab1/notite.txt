@@ -1,0 +1,9 @@
+lab1:
+
+1. intru pe oveleaf, fac cont dau new project dau upload si adaug teamplate-ul de pe teams
+2. modific in codul acela english si whatever - recompile
+3. la chapter2  cum fac referinta
+4. cand gasesc o referinta ii dau cite this si dau paste si iii pun numele pe care il doresc
+5. ma uit ca sa vad cum adaug imagini si chestii
+* pe cs ubb pe site la studeti examen de licenta  pe ceva hotarare exista ghid sa citesc
+https://www.cs.ubbcluj.ro/hotararea-consiliului-facultatii-de-matematica-si-informatica-privind-regulamentul-de-desfasurare-a-examenului-de-finalizare-de-studii-sesiunile-iunie-iulie-septembrie-2025/
